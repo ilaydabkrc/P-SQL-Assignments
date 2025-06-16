@@ -1,0 +1,13 @@
+SELECT *  FROM film
+WHERE title LIKE '%n' ORDER BY LENGTH (title) desc
+FETCH FIRST  5 ROWS ONLY;
+
+
+SELECT * FROM film
+WHERE title LIKE '%n' ORDER BY LENGTH (title) ASC
+FETCH NEXT 5 ROWS ONLY;
+
+
+SELECT * FROM customer 
+WHERE store_id = 1 ORDER BY last_name DESC 
+FETCH FIRST 4 ROWS ONLY;
